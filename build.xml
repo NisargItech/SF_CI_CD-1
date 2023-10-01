@@ -1,13 +1,13 @@
-<project name="Sample usage of Salesforce Ant tasks" default="test" basedir="." xmlns:sf="antlib:com.salesforce">
+<project name="salesforce" default="deploy" basedir="." xmlns:sf="antlib:com.salesforce">
 
-  <property file="build.properties"/>
-  
-  <property environment="env"/>
-  
-  <target name="deployAll">
+<property file="build.properties"/>
 
-  <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" testlevel="NoTestRun" logtype="Detail" deployRoot="force-app"/>
-  
-  </target>
-  
-  </project>
+<property environment="env"/>
+
+<target name="deployAll">
+
+<sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" testlevel="NoTestRun" logtype="Detail" deployRoot="force-app"/>
+
+</target>
+
+</project>
