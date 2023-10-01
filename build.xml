@@ -3,6 +3,9 @@
 <property file="build.properties"/>
 
 <property environment="env"/>
+<taskdef uri="antlib:com.salesforce"
+resource="com/salesforce/antlib.xml"
+classpath="${basedir}/lib/ant-salesforce.jar"/>
 
 <target name="deployAll">
 
