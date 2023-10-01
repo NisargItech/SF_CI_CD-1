@@ -9,4 +9,4 @@ public class MySampleApexClass {       //Class definition and body
       myValue = myValue+10;
       return myValue;
    }
-}
+}  
